@@ -1,16 +1,12 @@
+<ul id="slides">
 <% @users.each_with_index do |user, index| %>
-<div class="well user=<%= index %>">
-    <p><%= user.first_name %></p>
+<div class="slide" data-id="<%= index %>">
+    <li><%= user.first_name %></li>
 </div>
 <% end %>
-
-<ul id="slides">
-    <li class="slide showing">Slide 1</li>
-    <li class="slide">Slide 2</li>
-    <li class="slide">Slide 3</li>
-    <li class="slide">Slide 4</li>
-    <li class="slide">Slide 5</li>
 </ul>
 
-<button class="controls" id="previous">Previous</button>
-<button class="controls" id="next">Next</button>
+
+
+<button class="controls" id="decline">No</button>
+<button class="controls" id="approve">Yes</button>

@@ -9,7 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 
 require("bootstrap")
-
+require("../includes/slides.js")
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
